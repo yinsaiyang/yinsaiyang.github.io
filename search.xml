@@ -5,19 +5,4 @@
     <url>%2F2018%2F08%2F31%2Flinus%2F</url>
     <content type="text"><![CDATA[2017 年 6 月，Linux 基金会首次在中国召开 LinuxCon，有幸见到 Linus Torvalds 本尊，从进入媒体视线、访谈交流到离开的三个多小时内，Linus Torvalds 一直面带微笑。 在我看来，这种微笑不是职业训练出来的，而是一个纯粹技术人发自内心的表达。这位名扬 IT 界二十余载的神级人物，想必早已过了恃才傲物、口沸目赤的阶段，内心充盈的更多是工作中获得的欣慰与肩负的责任。 在他提到不想关心 Linux 技术以外的任何事情、一周不写代码就坐立不安的时候，我似乎看见了那个 11 岁学习 BASIC 并从此再也没有离开自己所爱的大男孩儿，拥有一颗不老心的 Linus Torvalds 依然葆有着他的技术好奇。 以下文字由 InfoQ 主要整理自 LinuxCon 大会上的媒体访谈及 Linus Tourvalds、Dirk Hohndel 的交流环节。 除了技术的其他一切工作都交给基金会打理 创建之后的Linux 系统越做越好并受到广泛关注，Linus Torvalds 于 2003 年决定离开当时的公司、加入开源码发展实验室以专职投入到 Linux 内核的工作，后来 Linux 基金会正式成立。 Linus 只想做技术，不想处理技术以外的事情。“如果你是一名工程师，很有可能你只想处理自己感兴趣的技术问题，其他一切事情你都想移交给别人来处理。” 正如所愿，这就是 Linus Torvalds 和基金会的分工，基金会负责接管许可证、专利、法务等问题，处理电话、邮件和文件准备等工作，事无巨细。LinusTorvalds 说他很庆幸自己不需要担心商业和管理的问题，他只要能领到工资不担心养孩子上学的问题就很好。 Linux 基金会执行总监 Jim Zemlin 称这是正确的模式： Linux 操作系统标准价值 103 亿美元；Linux 基金会拥有 Linux、Kubernetes、Cloud Foundry、Xen 等项目，以及 CNCF 基金会、Node 基金会等，整体所写的代码价值标准为 145 亿美元；由此估算 Linux 的经济价值占据整体价值 71%，不愧为开源项目鼻祖]]></content>
   </entry>
-  <entry>
-    <title><![CDATA[a]]></title>
-    <url>%2F2018%2F08%2F29%2Fa%2F</url>
-    <content type="text"><![CDATA[asssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq asasdsasdasdcvxxcvwe]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[title]]></title>
-    <url>%2F2018%2F08%2F29%2Ftitle%2F</url>
-    <content type="text"><![CDATA[dajiahao]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F08%2F18%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-31T06:24:03.008Z</updated>
+  <updated>2018-09-01T09:08:04.021Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linus</title>
+    <link href="http://yoursite.com/2018/08/31/jekins/"/>
+    <id>http://yoursite.com/2018/08/31/jekins/</id>
+    <published>2018-08-31T04:49:53.000Z</published>
+    <updated>2018-09-01T09:08:04.021Z</updated>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt; Jenkins是一款能提高效率的软件，它能帮你把软件开发过程形成工作流，典型的工作流包括以下几个步骤
+
+开发
+提交
+编译
+测试
+发布
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有了Jenkins的帮助，在这5步中，除了第1步，后续的4步都是自动化完成的，具体的，当你完成了提交，Jenkins会自动运行你的编译脚本，编译成功后，再运行你的测试脚本，这一步成功后，接着它会帮你把新程序发布出去，特别的，在最后一步，你可以选择手动发布，或自动发布，毕竟发布这件事情，还是需要人为的确认一下比较好。简而言之&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Jenkins可以帮你在写完代码后，一键完成开发过程中的一系列工作
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>linus</title>

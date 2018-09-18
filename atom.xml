@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-01T09:13:20.351Z</updated>
+  <updated>2018-09-18T02:11:40.725Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql1</title>
+    <link href="http://yoursite.com/2018/09/18/mysql1/"/>
+    <id>http://yoursite.com/2018/09/18/mysql1/</id>
+    <published>2018-09-18T02:11:40.000Z</published>
+    <updated>2018-09-18T02:11:40.725Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mysql</title>
+    <link href="http://yoursite.com/2018/09/18/mysql/"/>
+    <id>http://yoursite.com/2018/09/18/mysql/</id>
+    <published>2018-09-18T02:11:01.000Z</published>
+    <updated>2018-09-18T02:11:01.841Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mysql</title>
+    <link href="http://yoursite.com/2018/09/18/mysql/mysql/"/>
+    <id>http://yoursite.com/2018/09/18/mysql/mysql/</id>
+    <published>2018-09-18T02:11:01.000Z</published>
+    <updated>2018-09-18T03:48:47.045Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1)创建数据库            create database wpj1105;&lt;/p&gt;
+&lt;p&gt;2)创建数据库            create database wpj1105;&lt;/p&gt;
+&lt;p&gt;3)判断是否存在库 :        drop database
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>jekins</title>

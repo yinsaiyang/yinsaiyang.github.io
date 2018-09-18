@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-18T02:11:01.841Z</updated>
+  <updated>2018-09-18T10:14:57.476Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,24 +18,10 @@
   
   <entry>
     <title>mysql</title>
-    <link href="http://yoursite.com/2018/09/18/mysql/"/>
-    <id>http://yoursite.com/2018/09/18/mysql/</id>
-    <published>2018-09-18T02:11:01.000Z</published>
-    <updated>2018-09-18T02:11:01.841Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>mysql</title>
     <link href="http://yoursite.com/2018/09/18/mysql/mysql/"/>
     <id>http://yoursite.com/2018/09/18/mysql/mysql/</id>
     <published>2018-09-18T02:11:01.000Z</published>
-    <updated>2018-09-18T10:11:46.709Z</updated>
+    <updated>2018-09-18T10:14:57.476Z</updated>
     
     <summary type="html">
     
@@ -45,11 +31,7 @@
 &lt;p&gt;4)使用该数据库           use wpj1105; 5)#显示数据库中的表      show tables;&lt;/p&gt;
 &lt;p&gt;6)创建表create table student( id int auto_increment primary key, name varchar(50) not null, sex varchar(20), date varchar(50), content varchar(100) )default charset=utf8;&lt;/p&gt;
 &lt;p&gt;7)查找表   select xxxxx from student;&lt;/p&gt;
-&lt;p&gt;8)显示表的结构：desc  student;&lt;/p&gt;
-&lt;p&gt;9)添加数据 insert into student values(null,’aa’,’男’,’1988-10-2’,’……’);&lt;/p&gt;
-&lt;p&gt;10)修改数据表的编码方式:ALTER TABLE &lt;code&gt;test&lt;/code&gt; DEFAULT CHARACTER SET utf8&lt;/p&gt;
-&lt;p&gt;11)ALTER TABLE &lt;code&gt;test&lt;/code&gt; CHANGE &lt;code&gt;name&lt;/code&gt; &lt;code&gt;name&lt;/code&gt; VARCHAR(36) CHARACTER SET utf8 NOT NULL; 该命令用于将表test中name字段的编码方式改为utf8&lt;/p&gt;
-&lt;p&gt;12)修改某一条数据update student set sex=’男’ where id=4;&lt;br&gt;
+&lt;p&gt;8)显示表的结构：desc  student;&lt;br&gt;
     
     </summary>
     

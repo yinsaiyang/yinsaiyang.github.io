@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[top命令]]></title>
+    <url>%2F2018%2F09%2F21%2Ftop%E5%91%BD%E4%BB%A4%2Ftop%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[top命令是Linux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。下面详细介绍它的使用方法。top是一个动态显示过程,即可以通过用户按键来不断刷新当前状态.如果在前台执行该命令,它将独占前台,直到用户终止该程序为止.比较准确的说,top命令提供了实时的对系统处理器的状态监视.它将显示系统中CPU最“敏感”的任务列表.该命令可以按CPU使用.内存使用和执行时间对任务进行排序；而且该命令的很多特性都可以通过交互式命令或者在个人定制文件中进行设定.如图：]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[mysql]]></title>
     <url>%2F2018%2F09%2F18%2Fmysql%2Fmysql%2F</url>
     <content type="text"><![CDATA[1)创建数据库 create database wpj1105; 2)创建数据库 create database wpj1105; 3)判断是否存在库 : drop database if exists wpj1105; 4)使用该数据库 use wpj1105; 5)#显示数据库中的表 show tables; 6)创建表create table student( id int auto_increment primary key, name varchar(50) not null, sex varchar(20), date varchar(50), content varchar(100) )default charset=utf8; 7)查找表 select xxxxx from student; 8)显示表的结构：desc student;9)添加数据 insert into student values(null,’aa’,’男’,’1988-10-2’,’……’); 10)修改数据表的编码方式:ALTER TABLE test DEFAULT CHARACTER SET utf8 11)ALTER TABLE test CHANGE name name VARCHAR(36) CHARACTER SET utf8 NOT NULL; 该命令用于将表test中name字段的编码方式改为utf8 12)修改某一条数据update student set sex=’男’ where id=4; 13)delete from student where id=5; 14删除数据delete from student where id=5; 15)# and 且select from student where date&gt;’1988-1-2’ and date&lt;’1988-12-1’; 16)# or 或 select from student where date&lt;’1988-11-2’ or date&gt;’1988-12-1’; 17)#between select * from student where date between ‘1988-1-2’and’1988-12-1’; 18)修改数据update c set age=66 where id=2;update c set name=’花花’,age=21,sex=’女’ where id=2]]></content>

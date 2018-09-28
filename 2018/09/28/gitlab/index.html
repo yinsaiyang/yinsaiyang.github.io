@@ -96,7 +96,7 @@
 <meta property="og:image" content="http://yoursite.com/images/yong.png">
 <meta property="og:image" content="http://yoursite.com/images/chuang.png">
 <meta property="og:image" content="http://yoursite.com/images/cuo.png">
-<meta property="og:updated_time" content="2018-09-28T08:46:20.510Z">
+<meta property="og:updated_time" content="2018-09-28T08:51:00.755Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux殷赛洋博客">
 <meta name="twitter:description" content="jekins和gitlab了解gitlib的常用命令部署haproxy和tomcat环境 配置jenkins使用gitlib更新代码通过sonar实现代码检测GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服务器，可以运行各种自动化构建、测试或部署任务。所以这两者结合起来，就可以实现开发者提交代码到GitLab，Jenkins以一定频率自动运行测试、构建和部署的任务，帮组开发团">
@@ -376,7 +376,7 @@
       
         <p>jekins和gitlab<br>了解gitlib的常用命令<br>部署haproxy和tomcat环境</p>
 <p>配置jenkins使用gitlib更新代码<br>通过sonar实现代码检测<br>GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服务器，可以运行各种自动化构建、测试或部署任务。所以这两者结合起来，就可以实现开发者提交代码到GitLab，Jenkins以一定频率自动运行测试、构建和部署的任务，帮组开发团队更高效的集成和发布代码。<br>关闭防火墙，禁用selinux<br>jjekins需要安装java<br>jekins服务器<br>gitlab服务器<br><a id="more"></a><br>[#1#root@centos7 ~]$java -version<br>[#19#root@centos7 /]$yum install jenkins-2.27-1.1.noarch.rpm   //上传jekins安装包<br>[root@web-85 /]#java -version<br>[root@web-85 /]#yum install gitlab-ce-8.13.5-ce.0.el7.x86_64.rpm   //安装gitlab<br>gitlab配置<br>[root@web-85 gitlab]#vim  gitlab.rb<br>  external_url ‘<a href="http://192.168.12.142&#39;" target="_blank" rel="noopener">http://192.168.12.142&#39;</a>   //此虚拟机的本地地址</p>
-<p>  #使配置生效<br>[root@web-85 gitlab]#gitlab-ctl  reconfigure  //参考文章<a href="https://www.jianshu.com/p/b04356e014fa" target="_blank" rel="noopener">https://www.jianshu.com/p/b04356e014fa</a><br>查看版本<br>[root@web-85 gitlab]#cat /opt/gitlab/embedded/service/gitlab-rails/VERSION<br>8.13.5<br>[root@web-85 gitlab]#gitlab-ctl status   //查看他启动了哪些服务<br><a href="http://http://192.168.12.142用ip进行访问" target="_blank" rel="noopener">http://http://192.168.12.142用ip进行访问</a></p>
+<p>  #使配置生效<br>[root@web-85 gitlab]#gitlab-ctl  reconfigure  同步//参考文章<a href="https://www.jianshu.com/p/b04356e014fa" target="_blank" rel="noopener">https://www.jianshu.com/p/b04356e014fa</a><br>查看版本<br>[root@web-85 gitlab]#cat /opt/gitlab/embedded/service/gitlab-rails/VERSION<br>8.13.5<br>[root@web-85 gitlab]#gitlab-ctl status   //查看他启动了哪些服务<br><a href="http://http://192.168.12.142用ip进行访问" target="_blank" rel="noopener">http://http://192.168.12.142用ip进行访问</a></p>
 <pre><code>#重新启动GitLab 
 gitlab-ctl restart
 </code></pre><p>gitlab访问<br><img src="/images/deng.png"><br>修改密码之后，用户名root登陆<br>在设置里面关掉其他的注册方式<br><img src="/images/wei.png"><br>去掉这个勾选<br>创建一个用户<br><img src="/images/user.png"><br>邮箱可以找回密码，新用户用此方法设置密码<br><img src="/images/zhao.png"><br>创建组<br><img src="/images/group.png"><br>用户管理<br><img src="/images/yong.png"><br>下面是创建项目<br><img src="/images/chuang.png"><br>如果装有git那么我们就可以克隆<br>git clone <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br><img src="/images/cuo.png"><br>[root@web-85 web]#git add index.html  //先添加<br>[root@web-85 web]#git commit -m “xin”  在做标记<br>git push提交</p>

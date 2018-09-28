@@ -81,14 +81,26 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="linux">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="jekins和gitlab了解gitlib的常用命令部署haproxy和tomcat环境 配置jenkins使用gitlib更新代码通过sonar实现代码检测GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服务器，可以运行各种自动化构建、测试或部署任务。所以这两者结合起来，就可以实现开发者提交代码到GitLab，Jenkins以一定频率自动运行测试、构建和部署的任务，帮组开发团">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux殷赛洋博客">
+<meta property="og:url" content="http://yoursite.com/2018/09/28/gitlab/index.html">
 <meta property="og:site_name" content="linux殷赛洋博客">
+<meta property="og:description" content="jekins和gitlab了解gitlib的常用命令部署haproxy和tomcat环境 配置jenkins使用gitlib更新代码通过sonar实现代码检测GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服务器，可以运行各种自动化构建、测试或部署任务。所以这两者结合起来，就可以实现开发者提交代码到GitLab，Jenkins以一定频率自动运行测试、构建和部署的任务，帮组开发团">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-29T04:53:33.869Z">
+<meta property="og:image" content="http://yoursite.com/images/deng.png">
+<meta property="og:image" content="http://yoursite.com/images/wei.png">
+<meta property="og:image" content="http://yoursite.com/images/user.png">
+<meta property="og:image" content="http://yoursite.com/images/zhao.png">
+<meta property="og:image" content="http://yoursite.com/images/group.png">
+<meta property="og:image" content="http://yoursite.com/images/yong.png">
+<meta property="og:image" content="http://yoursite.com/images/chuang.png">
+<meta property="og:image" content="http://yoursite.com/images/cuo.png">
+<meta property="og:updated_time" content="2018-09-28T08:41:53.143Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux">
+<meta name="twitter:title" content="linux殷赛洋博客">
+<meta name="twitter:description" content="jekins和gitlab了解gitlib的常用命令部署haproxy和tomcat环境 配置jenkins使用gitlib更新代码通过sonar实现代码检测GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服务器，可以运行各种自动化构建、测试或部署任务。所以这两者结合起来，就可以实现开发者提交代码到GitLab，Jenkins以一定频率自动运行测试、构建和部署的任务，帮组开发团">
+<meta name="twitter:image" content="http://yoursite.com/images/deng.png">
 
 
 
@@ -118,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/28/gitlab/"/>
 
 
 
 
 
-  <title>linux | linux殷赛洋博客</title>
+  <title> | linux殷赛洋博客</title>
   
 
 
@@ -283,33 +295,167 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/28/gitlab/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷赛洋">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/tou.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="linux殷赛洋博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">linux</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-28T15:46:51+08:00">
+                2018-09-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>jekins和gitlab<br>了解gitlib的常用命令<br>部署haproxy和tomcat环境</p>
+<p>配置jenkins使用gitlib更新代码<br>通过sonar实现代码检测<br>GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服务器，可以运行各种自动化构建、测试或部署任务。所以这两者结合起来，就可以实现开发者提交代码到GitLab，Jenkins以一定频率自动运行测试、构建和部署的任务，帮组开发团队更高效的集成和发布代码。<br>关闭防火墙，禁用selinux<br>jjekins需要安装java<br>jekins服务器<br>gitlab服务器<br>[#1#root@centos7 ~]$java -version<br>[#19#root@centos7 /]$yum install jenkins-2.27-1.1.noarch.rpm   //上传jekins安装包<br>[root@web-85 /]#java -version<br>[root@web-85 /]#yum install gitlab-ce-8.13.5-ce.0.el7.x86_64.rpm   //安装gitlab<br>gitlab配置<br>[root@web-85 gitlab]#vim  gitlab.rb<br>  external_url ‘<a href="http://192.168.12.142&#39;" target="_blank" rel="noopener">http://192.168.12.142&#39;</a>   //此虚拟机的本地地址</p>
+<p>  #使配置生效<br>[root@web-85 gitlab]#gitlab-ctl  reconfigure  //参考文章<a href="https://www.jianshu.com/p/b04356e014fa" target="_blank" rel="noopener">https://www.jianshu.com/p/b04356e014fa</a><br>查看版本<br>[root@web-85 gitlab]#cat /opt/gitlab/embedded/service/gitlab-rails/VERSION<br>8.13.5<br>[root@web-85 gitlab]#gitlab-ctl status   //查看他启动了哪些服务<br><a href="http://http://192.168.12.142用ip进行访问" target="_blank" rel="noopener">http://http://192.168.12.142用ip进行访问</a></p>
+<pre><code>#重新启动GitLab 
+gitlab-ctl restart
+</code></pre><p>gitlab访问<br><img src="/images/deng.png"><br>修改密码之后，用户名root登陆<br>在设置里面关掉其他的注册方式<br><img src="/images/wei.png"><br>去掉这个勾选<br>创建一个用户<br><img src="/images/user.png"><br>邮箱可以找回密码，新用户用此方法设置密码<br><img src="/images/zhao.png"><br>创建组<br><img src="/images/group.png"><br>用户管理<br><img src="/images/yong.png"><br>下面是创建项目<br><img src="/images/chuang.png"><br>如果装有git那么我们就可以克隆<br>git clone <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br><img src="/images/cuo.png"><br>[root@web-85 web]#git add index.html  //先添加<br>[root@web-85 web]#git commit -m “xin”  在做标记<br>git push提交</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>每一天的进步都值得支持，每一篇文章都值得打赏。</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/weixin.png" alt="殷赛洋 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/21/top命令/top命令/" rel="next" title="top命令">
+                <i class="fa fa-chevron-left"></i> top命令
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 

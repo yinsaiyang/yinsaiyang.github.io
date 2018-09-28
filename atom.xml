@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-21T09:31:02.653Z</updated>
+  <updated>2018-09-28T08:41:53.143Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/09/28/gitlab/"/>
+    <id>http://yoursite.com/2018/09/28/gitlab/</id>
+    <published>2018-09-28T07:46:51.318Z</published>
+    <updated>2018-09-28T08:41:53.143Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;jekins和gitlab&lt;br&gt;了解gitlib的常用命令&lt;br&gt;部署haproxy和tomcat环境&lt;/p&gt;
+&lt;p&gt;配置jenkins使用gitlib更新代码&lt;br&gt;通过sonar实现代码检测&lt;br&gt;GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>top命令</title>

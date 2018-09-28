@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-28T08:41:53.143Z</updated>
+  <updated>2018-09-28T08:46:20.510Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,12 @@
     <link href="http://yoursite.com/2018/09/28/gitlab/"/>
     <id>http://yoursite.com/2018/09/28/gitlab/</id>
     <published>2018-09-28T07:46:51.318Z</published>
-    <updated>2018-09-28T08:41:53.143Z</updated>
+    <updated>2018-09-28T08:46:20.510Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;jekins和gitlab&lt;br&gt;了解gitlib的常用命令&lt;br&gt;部署haproxy和tomcat环境&lt;/p&gt;
-&lt;p&gt;配置jenkins使用gitlib更新代码&lt;br&gt;通过sonar实现代码检测&lt;br&gt;GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服
-        
-      
+      &lt;p&gt;jekins和gitlab&lt;br&gt;了解gitlib的常用命令&lt;br&gt;部署haproxy和tomcat环境&lt;/p&gt;
+&lt;p&gt;配置jenkins使用gitlib更新代码&lt;br&gt;通过sonar实现代码检测&lt;br&gt;GitLab是一个代码仓库，用来管理代码。Jenkins是一个自动化服务器，可以运行各种自动化构建、测试或部署任务。所以这两者结合起来，就可以实现开发者提交代码到GitLab，Jenkins以一定频率自动运行测试、构建和部署的任务，帮组开发团队更高效的集成和发布代码。&lt;br&gt;关闭防火墙，禁用selinux&lt;br&gt;jjekins需要安装java&lt;br&gt;jekins服务器&lt;br&gt;gitlab服务器&lt;br&gt;
     
     </summary>
     

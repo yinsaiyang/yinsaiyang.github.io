@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-28T09:10:41.801Z</updated>
+  <updated>2018-10-02T02:58:01.120Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jekins持续发布代码</title>
+    <link href="http://yoursite.com/2018/10/02/jekins%E6%8C%81%E7%BB%AD%E5%8F%91%E5%B8%83%E4%BB%A3%E7%A0%81/"/>
+    <id>http://yoursite.com/2018/10/02/jekins持续发布代码/</id>
+    <published>2018-10-02T02:51:53.000Z</published>
+    <updated>2018-10-02T02:58:01.120Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;启动jekins&lt;/p&gt;
+&lt;p&gt;jekins也安装git&lt;br&gt;yum install git&lt;br&gt;创建文件夹&lt;br&gt;cd /opt/&lt;br&gt;yum install  git&lt;br&gt;[#14#root@centos7 /opt]$mkdir
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>gitlab</title>

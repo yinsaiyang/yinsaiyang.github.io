@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="1)创建数据库            create database wpj1105; 2)创建数据库            create database wpj1105; 3)判断是否存在库 :        drop database if exists wpj1105; 4)使用该数据库           use wpj1105; 5)#显示数据库中的表      show tables">
+<meta name="description" content="启动jekins jekins也安装gityum install git创建文件夹cd /opt/yum install  git[#14#root@centos7 /opt]$mkdir git[#16#root@centos7 /opt]$cd git[#19#root@centos7 /opt/git]$git clone http://192.168.12.142/myweb/web.gi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql">
-<meta property="og:url" content="http://yoursite.com/2018/09/18/mysql/mysql/index.html">
+<meta property="og:title" content="jekins持续发布代码">
+<meta property="og:url" content="http://yoursite.com/2018/10/02/jekins持续发布代码/index.html">
 <meta property="og:site_name" content="linux殷赛洋博客">
-<meta property="og:description" content="1)创建数据库            create database wpj1105; 2)创建数据库            create database wpj1105; 3)判断是否存在库 :        drop database if exists wpj1105; 4)使用该数据库           use wpj1105; 5)#显示数据库中的表      show tables">
+<meta property="og:description" content="启动jekins jekins也安装gityum install git创建文件夹cd /opt/yum install  git[#14#root@centos7 /opt]$mkdir git[#16#root@centos7 /opt]$cd git[#19#root@centos7 /opt/git]$git clone http://192.168.12.142/myweb/web.gi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-18T10:14:57.476Z">
+<meta property="og:updated_time" content="2018-10-02T02:58:01.120Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mysql">
-<meta name="twitter:description" content="1)创建数据库            create database wpj1105; 2)创建数据库            create database wpj1105; 3)判断是否存在库 :        drop database if exists wpj1105; 4)使用该数据库           use wpj1105; 5)#显示数据库中的表      show tables">
+<meta name="twitter:title" content="jekins持续发布代码">
+<meta name="twitter:description" content="启动jekins jekins也安装gityum install git创建文件夹cd /opt/yum install  git[#14#root@centos7 /opt]$mkdir git[#16#root@centos7 /opt]$cd git[#19#root@centos7 /opt/git]$git clone http://192.168.12.142/myweb/web.gi">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/18/mysql/mysql/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/02/jekins持续发布代码/"/>
 
 
 
 
 
-  <title>mysql | linux殷赛洋博客</title>
+  <title>jekins持续发布代码 | linux殷赛洋博客</title>
   
 
 
@@ -293,12 +293,12 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/18/mysql/mysql/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/02/jekins持续发布代码/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="殷赛洋">
@@ -315,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">mysql</h1>
+          <h1 class="post-title" itemprop="name headline">jekins持续发布代码</h1>
         
 
         <div class="post-meta">
@@ -327,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-18T10:11:01+08:00">
-                2018-09-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-02T10:51:53+08:00">
+                2018-10-02
               </time>
             
 
@@ -365,19 +365,20 @@
       
 
       
-        <p>1)创建数据库            create database wpj1105;</p>
-<p>2)创建数据库            create database wpj1105;</p>
-<p>3)判断是否存在库 :        drop database if exists wpj1105;</p>
-<p>4)使用该数据库           use wpj1105; 5)#显示数据库中的表      show tables;</p>
-<p>6)创建表create table student( id int auto_increment primary key, name varchar(50) not null, sex varchar(20), date varchar(50), content varchar(100) )default charset=utf8;</p>
-<p>7)查找表   select xxxxx from student;</p>
-<p>8)显示表的结构：desc  student;<br><a id="more"></a><br>9)添加数据 insert into student values(null,’aa’,’男’,’1988-10-2’,’……’);</p>
-<p>10)修改数据表的编码方式:ALTER TABLE <code>test</code> DEFAULT CHARACTER SET utf8</p>
-<p>11)ALTER TABLE <code>test</code> CHANGE <code>name</code> <code>name</code> VARCHAR(36) CHARACTER SET utf8 NOT NULL; 该命令用于将表test中name字段的编码方式改为utf8</p>
-<p>12)修改某一条数据update student set sex=’男’ where id=4;</p>
-<p>13)delete from student where id=5;</p>
-<p>14删除数据delete from student where id=5; 15)# and 且select <em> from student where date&gt;’1988-1-2’ and date&lt;’1988-12-1’; 16)# or 或   select </em> from student where date&lt;’1988-11-2’ or date&gt;’1988-12-1’; 17)#between   select * from student where date between ‘1988-1-2’and’1988-12-1’;</p>
-<p>18)修改数据update c set age=66 where id=2;update c set name=’花花’,age=21,sex=’女’ where id=2</p>
+        <p>启动jekins</p>
+<p>jekins也安装git<br>yum install git<br>创建文件夹<br>cd /opt/<br>yum install  git<br>[#14#root@centos7 /opt]$mkdir git<br>[#16#root@centos7 /opt]$cd git<br>[#19#root@centos7 /opt/git]$git clone <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br>[#20#root@centos7 /opt/git]$ls -a<br>.  ..  web<br>[#45#root@centos7 /opt/git]$git config –global user.email “<a href="mailto:1069465035@qq.com" target="_blank" rel="noopener">1069465035@qq.com</a>“<br>[#46#root@centos7 /opt/git]$git config –global user.name “name”<br>[#23#root@centos7 /opt/git]$git init  //初始化<br>进入.git目录中,在config文件中就可以看得到<br>[#54#root@centos7 /opt/git/web/.git]$vim config </p>
+<p>[core]<br>        repositoryformatversion = 0<br>        filemode = true<br>        bare = false<br>        logallrefupdates = true<br>[remote “origin”]<br>        url = <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br>        fetch = +refs/heads/<em>:refs/remotes/origin/</em><br>[branch “master”]<br>        remote = origin<br>        merge = refs/heads/master</p>
+<pre><code>git pull是提交代码到本地，也就是别人改代码，提SS交了，我们pull一下到本地再看
+git reset --hard HEAD^ #git版本回滚，HEAD为当前版本，加一个^为上一个，^^为上上一个版本
+git reflog #获取每次提交的ID，可以使用--hard根据提交的ID进行版本回退
+git reset --hard 5ae4b06 #回退到指定的id版本
+git branch #查看当前所处的分支
+git checkout -- file #从服务器更新某个那文件覆盖到本地的文件
+[#67#root@centos7 /opt/git/web]$git reset --hard HEAD^
+</code></pre><p>HEAD is now at c580680 haha<br>[#72#root@centos7 /opt/git/web]$git reset –hard HEAD^^<br>HEAD is now at 8dba284 Add new file</p>
+<p>准备两台服务器安装web</p>
+<p>下面复习tomcat<br>下面准备一台服务器安装tomcat<br>[root@centos7 ~]#useradd www -u 2000  制定一个运行用户<br>passwd  www 设置密码<br>[root@centos7 opt]#tar xvf apache-tomcat-7.0.59.tar.gz<br>[root@centos7 opt]#tar xvf apache-tomcat-7.0.59.tar.gz  -C /apps/</p>
+<p>我重新用yum安装<br><a href="https://blog.csdn.net/reblue520/article/details/76287541" target="_blank" rel="noopener">https://blog.csdn.net/reblue520/article/details/76287541</a><br>上面是视频下面是实践<br>首先jekins官网的yum源<br>sudo wget -O /etc/yum.repos.d/jenkins.repo <a href="https://pkg.jenkins.io/redhat/jenkins.repo" target="_blank" rel="noopener">https://pkg.jenkins.io/redhat/jenkins.repo</a><br>sudo rpm –import <a href="https://pkg.jenkins.io/redhat/jenkins.io.key" target="_blank" rel="noopener">https://pkg.jenkins.io/redhat/jenkins.io.key</a><br>yum install jenkins<br>打开浏览器，输入ip访问8080端口<br><a href="http://192.168.12.159:8080/" target="_blank" rel="noopener">http://192.168.12.159:8080/</a></p>
 
       
     </div>
@@ -426,8 +427,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/01/jekins/" rel="next" title="jekins">
-                <i class="fa fa-chevron-left"></i> jekins
+              <a href="/2018/09/28/gitlab/" rel="next" title="gitlab">
+                <i class="fa fa-chevron-left"></i> gitlab
               </a>
             
           </div>
@@ -435,10 +436,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/21/top命令/top命令/" rel="prev" title="top命令">
-                top命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

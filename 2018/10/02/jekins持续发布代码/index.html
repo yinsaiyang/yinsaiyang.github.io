@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="linux殷赛洋博客">
 <meta property="og:description" content="启动jekins jekins也安装gityum install git创建文件夹cd /opt/yum install  git[#14#root@centos7 /opt]$mkdir git[#16#root@centos7 /opt]$cd git[#19#root@centos7 /opt/git]$git clone http://192.168.12.142/myweb/web.gi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-02T02:58:01.120Z">
+<meta property="og:updated_time" content="2018-10-02T03:03:31.359Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jekins持续发布代码">
 <meta name="twitter:description" content="启动jekins jekins也安装gityum install git创建文件夹cd /opt/yum install  git[#14#root@centos7 /opt]$mkdir git[#16#root@centos7 /opt]$cd git[#19#root@centos7 /opt/git]$git clone http://192.168.12.142/myweb/web.gi">
@@ -366,8 +366,7 @@
 
       
         <p>启动jekins</p>
-<p>jekins也安装git<br>yum install git<br>创建文件夹<br>cd /opt/<br>yum install  git<br>[#14#root@centos7 /opt]$mkdir git<br>[#16#root@centos7 /opt]$cd git<br>[#19#root@centos7 /opt/git]$git clone <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br>[#20#root@centos7 /opt/git]$ls -a<br>.  ..  web<br>[#45#root@centos7 /opt/git]$git config –global user.email “<a href="mailto:1069465035@qq.com" target="_blank" rel="noopener">1069465035@qq.com</a>“<br>[#46#root@centos7 /opt/git]$git config –global user.name “name”<br>[#23#root@centos7 /opt/git]$git init  //初始化<br>进入.git目录中,在config文件中就可以看得到<br>[#54#root@centos7 /opt/git/web/.git]$vim config </p>
-<p>[core]<br>        repositoryformatversion = 0<br>        filemode = true<br>        bare = false<br>        logallrefupdates = true<br>[remote “origin”]<br>        url = <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br>        fetch = +refs/heads/<em>:refs/remotes/origin/</em><br>[branch “master”]<br>        remote = origin<br>        merge = refs/heads/master</p>
+<p>jekins也安装git<br>yum install git<br>创建文件夹<br>cd /opt/<br>yum install  git<br>[#14#root@centos7 /opt]$mkdir git<br>[#16#root@centos7 /opt]$cd git<br>[#19#root@centos7 /opt/git]$git clone <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br>[#20#root@centos7 /opt/git]$ls -a<br>.  ..  web<br>[#45#root@centos7 /opt/git]$git config –global user.email “<a href="mailto:1069465035@qq.com" target="_blank" rel="noopener">1069465035@qq.com</a>“<br>[#46#root@centos7 /opt/git]$git config –global user.name “name”<br>[#23#root@centos7 /opt/git]$git init  //初始化<br>进入.git目录中,在config文件中就可以看得到<br>[#54#root@centos7 /opt/git/web/.git]$vim config<br><a id="more"></a><br>[core]<br>        repositoryformatversion = 0<br>        filemode = true<br>        bare = false<br>        logallrefupdates = true<br>[remote “origin”]<br>        url = <a href="http://192.168.12.142/myweb/web.git" target="_blank" rel="noopener">http://192.168.12.142/myweb/web.git</a><br>        fetch = +refs/heads/<em>:refs/remotes/origin/</em><br>[branch “master”]<br>        remote = origin<br>        merge = refs/heads/master</p>
 <pre><code>git pull是提交代码到本地，也就是别人改代码，提SS交了，我们pull一下到本地再看
 git reset --hard HEAD^ #git版本回滚，HEAD为当前版本，加一个^为上一个，^^为上上一个版本
 git reflog #获取每次提交的ID，可以使用--hard根据提交的ID进行版本回退

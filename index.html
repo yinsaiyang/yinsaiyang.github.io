@@ -365,29 +365,14 @@
 
       
         
-          
-            <p>zabbix安装<br>server端<br>下载yum源<br>rpm -i <a href="https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm" target="_blank" rel="noopener">https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm</a><br>agent端<br>下载yum源<br>rpm -i <a href="https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm" target="_blank" rel="noopener">https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm</a><br>一.Zabbix简介   </p>
-<pre><code>zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
-zabbix由zabbix server与可选组件zabbix agent两部门组成。
-zabbix server可以通过SNMP，zabbix agent，ping，端口监视等方法提供对远程服务器/网络状态的监视。
-zabbix agent需要安装在被监视的目标服务器上，它主要完成对硬件信息或与操作系统有关的内存，CPU等信息的收集。
-</code></pre><p>Agent/Server<br>被监控主机：Agent<br>服务器：SERVER<br>存储：mysql/mysql<br>web GUI:PHP<br>AMP,NMP:<br>管理，展示<br>安装zabbix参考<br><a href="https://www.zabbix.com/download?zabbix=3.4&amp;os_distribution=centos&amp;os_version=7&amp;db=MySQL" target="_blank" rel="noopener">https://www.zabbix.com/download?zabbix=3.4&amp;os_distribution=centos&amp;os_version=7&amp;db=MySQL</a></p>
-<p>下面装server端<br>[#17#root@centos7 ~]$yum install mariadb-server<br>skip_name_resolve = ON  //跳过域名解析<br>innodb_file_per_table = ON<br>[#20#root@centos7 ~]$mysql_secure_installation  //设置密码<br>create database zabbix character set utf8 collate utf8_bin;  //创建库<br>MariaDB [(none)]&gt; grant all privileges on zabbix.<em> to zabbix@localhost identified by ‘centos’;  //授权账号和密码<br>MariaDB [(none)]&gt; FLUSH PRIVILEGES; 刷新数据库<br>再安装zabbix的yum仓库，下面这个十自动生成yum仓库<br>[#23#root@centos7 ~]$rpm -i <a href="http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm" target="_blank" rel="noopener">http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm</a><br>warning: /var/tmp/rpm-tmp.SGSdpS: Header V4 RSA/SHA512 Signature, key ID a14fe591: NOKEY<br>yum install zabbix-server-mysql zabbix-web-mysql zabbix-agent<br>[#34#root@centos7 ~]$systemctl start zabbix-agent  agent监听再10050端口上<br>下面安装或者导入zabbix的数据库<br>[#32#root@centos7 ~]$zcat /usr/share/doc/zabbix-server-mysql</em>/create.sql.gz | mysql -uzabbix -p zabbix<br>Enter password:centos<br>登陆<br>[#38#root@centos7 ~]$mysql -uzabbix -p zabbix<br>Enter password:<br>MariaDB [zabbix]&gt; show tables;</p>
-<p>设置zabbix密码<br>[#39#root@centos7 ~]$cd /etc/zabbix<br>[#41#root@centos7 /etc/zabbix]$vim zabbix_server.conf<br>DBPassword=centos<br>[#46#root@centos7 /etc/zabbix]$systemctl start zabbix-server<br>备注（server监听再10051端口上），agent监听再10050端口上</p>
-<p>设置时区<br>[#50#root@centos7 /etc/httpd/conf.d]$vim zabbix.conf<br>  php_value date.timezone Asia/Shanghai</p>
-<p>[#51#root@centos7 /etc/httpd/conf.d]$systemctl start httpd<br>访问，启动安装过程</p>
-<p>密码是、<br>[#62#root@centos7 /etc/zabbix]$vim zabbix_server.conf<br>DBPassword=centos</p>
-<p>下面监控配置<br>Zabbix(2)</p>
-<pre><code>监控配置：
-    术语：host groups --&gt; host --&gt; application --&gt; item --&gt; trigger --&gt; action (conditions, operations)
-            graph:
-            simple: 每个item定义完成后自动生成
-            customed：用于将多个item的数据整合于一个图形中展示    
-</code></pre><p>再安装zabbix的yum仓库，下面这个十自动生成yum仓库<br>[#23#root@centos7 ~]$rpm -i <a href="http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm" target="_blank" rel="noopener">http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm</a><br>安装<br>192.168.12.234<br>[#44#root@centos7 ~]$yum install zabbix-agent zabbix-sender</p>
-<p>Server=192.168.12.167  //指定server的主机<br>ServerActive=192.168.12.167 //这个十监控谁，给谁发送数据<br>Hostname=master.magedu.com  //标识主机名<br>gedusnsrv2 /etc/zabbix]$systemctl start zabbix-agent.service<br>下面图形界面配置监控</p>
-<p>服务端<br>[#58#root@centos7 /etc/zabbix]$yum install zabbix-get<br>[#61#root@centos7 /etc/zabbix]$zabbix_get -h 查看<br>[#61#root@centos7 /etc/zabbix]$zabbix_get -s 192.168.12.234 -p 10050 -k “net.if.in[ens33,packets]”<br>2465<br>[#26#root@centos7 ~]$zabbix_get -s 192.168.12.234 -p 10050 -k “net.if.in[ens33,packets]”<br>13371<br>2485</p>
-
-          
+          <p>zabbix安装<br>server端<br>下载yum源<br>rpm -i <a href="https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm" target="_blank" rel="noopener">https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm</a><br>agent端<br>下载yum源<br>rpm -i <a href="https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm" target="_blank" rel="noopener">https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm</a><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/02/zabbix1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

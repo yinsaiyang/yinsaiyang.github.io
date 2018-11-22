@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-22T06:39:57.229Z</updated>
+  <updated>2018-11-22T06:45:24.265Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="http://yoursite.com/2018/11/22/ansible/"/>
     <id>http://yoursite.com/2018/11/22/ansible/</id>
     <published>2018-11-22T06:10:09.000Z</published>
-    <updated>2018-11-22T06:39:57.229Z</updated>
+    <updated>2018-11-22T06:45:24.265Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Ansible是一个配置管理和配置工具，类似于Chef，Puppet或Salt。这是一款很简单也很容易入门的部署工具，它使用SSH连接到服务器并运行配置好的任务，服务器上不用安装任何多余的软件，只需要开启ssh，所有工作都交给client端的ansible负责。&lt;br&gt;关于
-        
-      
+      &lt;p&gt;Ansible是一个配置管理和配置工具，类似于Chef，Puppet或Salt。这是一款很简单也很容易入门的部署工具，它使用SSH连接到服务器并运行配置好的任务，服务器上不用安装任何多余的软件，只需要开启ssh，所有工作都交给client端的ansible负责。&lt;br&gt;关于Ansible的一个好处是，将bash脚本转换为可执行任务是非常容易的。我们可以编写自己的配置程序，但是Ansible更加干净，因为它可以自动在执行任务之前获取上下文。ansible任务是幂等的，没有大量额外的编码，ansible可以一次又一次地安全运，而bash命令这种幂等性。&lt;br&gt;ansible使用“facts”来确保任务的幂等安全运行， 它是在运行任务之前收集的系统和环境信息。ansible使用这些facts来检查状态，看看是否需要改变某些东西以获得所需的结果。这使得ansible可以让服务器一次又一次地运行可复制的任务&lt;br&gt;
     
     </summary>
     

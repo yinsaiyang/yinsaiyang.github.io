@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[ansible]]></title>
     <url>%2F2018%2F11%2F22%2Fansible%2F</url>
-    <content type="text"><![CDATA[Ansible是一个配置管理和配置工具，类似于Chef，Puppet或Salt。这是一款很简单也很容易入门的部署工具，它使用SSH连接到服务器并运行配置好的任务，服务器上不用安装任何多余的软件，只需要开启ssh，所有工作都交给client端的ansible负责。关于Ansible的一个好处是，将bash脚本转换为可执行任务是非常容易的。我们可以编写自己的配置程序，但是Ansible更加干净，因为它可以自动在执行任务之前获取上下文。ansible任务是幂等的，没有大量额外的编码，ansible可以一次又一次地安全运，而bash命令这种幂等性。ansible使用“facts”来确保任务的幂等安全运行， 它是在运行任务之前收集的系统和环境信息。ansible使用这些facts来检查状态，看看是否需要改变某些东西以获得所需的结果。这使得ansible可以让服务器一次又一次地运行可复制的任务yum -y install ansible]]></content>
+    <content type="text"><![CDATA[Ansible是一个配置管理和配置工具，类似于Chef，Puppet或Salt。这是一款很简单也很容易入门的部署工具，它使用SSH连接到服务器并运行配置好的任务，服务器上不用安装任何多余的软件，只需要开启ssh，所有工作都交给client端的ansible负责。关于Ansible的一个好处是，将bash脚本转换为可执行任务是非常容易的。我们可以编写自己的配置程序，但是Ansible更加干净，因为它可以自动在执行任务之前获取上下文。ansible任务是幂等的，没有大量额外的编码，ansible可以一次又一次地安全运，而bash命令这种幂等性。ansible使用“facts”来确保任务的幂等安全运行， 它是在运行任务之前收集的系统和环境信息。ansible使用这些facts来检查状态，看看是否需要改变某些东西以获得所需的结果。这使得ansible可以让服务器一次又一次地运行可复制的任务yum -y install ansibleyum install ansible配置文件 /etc/ansible/ansible.cfg 主配置文件，配置ansible工作特性/etc/ansible/hosts 主机清单/etc/ansible/roles/ 存放角色的目录 程序 /usr/bin/ansible 主程序，临时命令执行工具 /usr/bin/ansible-doc 查看配置文档，模块功能查看工具/usr/bin/ansible-galaxy 下载/上传优秀代码或Roles模块的官 网平台 /usr/bin/ansible-playbook 定制自动化任务，编排剧本工具 /usr/bin/ansible-pull 远程执行命令的工具/usr/bin/ansible-vault 文件加密工具/usr/bin/ansible-console 基于Console界面与用户交互的执行工具下面添加主机清单vim /etc/ansible/hosts]]></content>
   </entry>
   <entry>
     <title><![CDATA[zabbix1]]></title>
